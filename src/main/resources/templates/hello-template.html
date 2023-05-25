@@ -1,6 +1,7 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="ko"> <!-- 타임리프 템플릿 엔진 사용시 적어주어야 함. 템플릿엔진? html을 바꾸는것/ 타임리프 장점? html을 그대로 사용하고
 파일을 서버 없이 바로 열어서 확인 가능-->
+<!--${name} 값은 MODEL에서 값을 꺼낸다. 모델 KEY값이 'NAME'인것을 치환-->
   <body>
-    <p th:text="hello +${name}">hello! empty</p> <!--hello! empty 값은 앞에 hello+${name} 값이 없을때 출력!-->
+    <p th:text="'hello  ' +${name}">hello! empty</p> <!--hello! empty 값은 앞에 hello+${name} 값이 없을때 출력!-->
   </body>
 </html>
